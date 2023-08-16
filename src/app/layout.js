@@ -14,9 +14,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="icon" type="image/x-icon" href="/logo.png" />
-        <link rel="canonical" href="https://www.hbomaxwatchparty.com/" />
+        <link rel="canonical" href="https://www.hbomaxparty.net/" />
 
-        <meta property="og:url" content="https://www.hbomaxwatchparty.com/" />
+        <meta property="og:url" content="https://www.hbomaxparty.net/" />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
@@ -28,15 +28,12 @@ export default function RootLayout({ children }) {
         />
         <meta
           property="og:image"
-          content="https://www.hbomaxwatchparty.com/logo.png"
+          content="https://www.hbomaxparty.net/logo.png"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="hbomaxwatchparty.com" />
-        <meta
-          property="twitter:url"
-          content="https://www.hbomaxwatchparty.com/"
-        />
+        <meta property="twitter:domain" content="hbomaxparty.net" />
+        <meta property="twitter:url" content="https://www.hbomaxparty.net/" />
         <meta
           name="twitter:title"
           content="Bring together HBO Max watch party and movie lovers "
@@ -47,7 +44,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           name="twitter:image"
-          content="https://www.hbomaxwatchparty.com/logo.png"
+          content="https://www.hbomaxparty.net/logo.png"
         />
       </head>
       <body>
