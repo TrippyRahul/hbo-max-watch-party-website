@@ -26,10 +26,9 @@ const About = () => {
               </p>
               <p>
                 To use this extension, make sure you have an active
-                subscription. The feature is available for specific movies and
-                TV shows within it’s library. So, check out the eligible content
-                and start enjoying the fun of synchronized streaming with your
-                friends and family.
+                subscription. It has features including chat, audio, and video
+                calls. So, select your favorite content and start enjoying the
+                fun of synchronized streaming with your friends and family.
               </p>
               <p>
                 In comparison to teleparty extension, it has the best features

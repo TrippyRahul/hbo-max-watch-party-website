@@ -14,12 +14,11 @@ const Favorite = () => {
               </div>
               <div className={styles.desc}>
                 <p>
-                  To have an amazing time on it, you simply need to log in and
-                  invite your best buddy. Use this extension to see shows and
-                  movies together. You can also chat and audio and video calls
-                  while streaming your favorite content. While having your
-                  showtime on max, enjoy fast buffering and HD video quality on
-                  your desktop.
+                  It is a very simple and quick process, it’s just you need to
+                  log in and activate it. You can also invite your friends and
+                  family to it. With this browser extension, you can watch
+                  movies and series together and share all your moments at the
+                  same time. You can even make a call while watching a movie.
                 </p>
               </div>
             </div>
@@ -59,16 +58,16 @@ const Favorite = () => {
           </div>
           <div className={styles["bottom-right"]}>
             <div className={styles.headings}>
-              <h2>Customize and enjoy your favorite shows on HBO Max</h2>
+              <h2>Explore the variety of shows on HBO Max</h2>
             </div>
             <div className={styles.desc}>
               <p>
-                Personalize your party using this extension and choose a unique
-                user icon and access exciting features like chat, audio calls,
-                and video calls. Gather your loved ones and stream your favorite
-                movies from various OTT platforms in high quality. Share
-                laughter, tears, and cheers together from the comfort of your
-                own space.
+                In this extension, you can explore different varieties of TV
+                shows, movies, and series. It has exciting features including
+                chat, audio, and video calls. So, unite with your friends and
+                family and watch your favorite shows with them. While watching a
+                series, you can create your own watching room and share your
+                feelings from your comfort zone.
               </p>
             </div>
           </div>

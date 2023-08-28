@@ -19,7 +19,7 @@ const questions = [
   {
     id: 3,
     ques: "How to screenshare hbo max?",
-    ans: "To screen share, download the extension and use a screen-sharing application or feature on your device during playback and let others view the content in real-time. Please ensure you comply with it’s terms of service and any copyright regulations when sharing content. ",
+    ans: "To screen share, download the extension on your web browser. ",
   },
   {
     id: 4,

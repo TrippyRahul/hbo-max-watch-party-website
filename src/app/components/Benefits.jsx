@@ -20,13 +20,12 @@ const Benefits = () => {
         <div className={styles.right}>
           <div className={styles.top}>
             <div className={styles.headings}>
-              <h2>Experience limitless streaming with this extension</h2>
+              <h2>Enjoy yourself in endless streaming</h2>
             </div>
             <div className={styles.desc}>
               <p>
-                With this extension, you can see unlimited movies and shows from
-                different streaming platforms. It offers endless entertainment
-                for you and your friends, making it a perfect party experience.
+                You can explore endless movies and series from multiple OTT
+                platforms. With this extension, have the best time together.
               </p>
             </div>
             <div className={styles.btn}>

@@ -10,22 +10,16 @@ const Hero = () => {
           <div className={styles.content}>
             <div className={styles["inner-container"]}>
               <div className={styles.headings}>
-                <h1>
-                  Have a great time watching your favorite content with hbomax
-                  teleparty
-                </h1>
+                <h1>Watch your favorite content with hbomax teleparty</h1>
               </div>
               <div className={styles.text}>
                 <p>
-                  With this watch party extension, you can experience a lot of
-                  joy while enjoying your favorite content. You&apos;ll find a
-                  wide selection of movies, series, and TV shows to view with
-                  your family and friends. It&apos;s even better because you can
-                  invite your loved ones to join you in streaming watch hbo max
-                  with friends The best part is that you can chat and make audio
-                  and video calls while streaming. This extension allows you to
-                  create fun memories and share the excitement of viewing a
-                  series together, even if you are far away from each other.
+                  In Watch party extension you can explore a wide range of
+                  content in HBO Max. You can watch them all with your family
+                  and friends. The best part is you can even invite to watch hbo
+                  max with friends. With its, amazing features you can chat or
+                  do audio/video calls while having your showtime. Save your fun
+                  memories and share the excitement of watching shows together.
                 </p>
               </div>
               <div className={styles.btn}>

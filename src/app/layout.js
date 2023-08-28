@@ -4,9 +4,9 @@ import Header from "./components/Header";
 import "./globals.css";
 
 export const metadata = {
-  title: "Bring together HBO Max watch party and movie lovers  ",
+  title: "Unite together with HBO Max watch party and have fun",
   description:
-    "stream your favorite shows and movies with HBO Max watch party, where you can chat and make audio and video calls while viewing a movie together",
+    "With HBO Max watch party, you can watch all your favorite series and shows. It is a fantastic tool with incredible features",
 };
 
 export default function RootLayout({ children }) {
@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           property="og:description"
-          content=" stream your favorite shows and movies with HBO Max watch party, where you can chat and make audio and video calls while viewing a movie together."
+          content=" With HBO Max watch party, you can watch all your favorite series and shows. It is a fantastic tool with incredible features."
         />
         <meta
           property="og:image"
@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           name="twitter:description"
-          content=" stream your favorite shows and movies with HBO Max watch party, where you can chat and make audio and video calls while viewing a movie together."
+          content=" With HBO Max watch party, you can watch all your favorite series and shows. It is a fantastic tool with incredible features."
         />
         <meta
           name="twitter:image"
