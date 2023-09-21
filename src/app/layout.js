@@ -15,6 +15,10 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" type="image/x-icon" href="/logo.png" />
         <link rel="canonical" href="https://www.hbomaxparty.net/" />
+        <meta
+          name="google-site-verification"
+          content="_SSDWsPUvPSZSKu77KqbFQw4zYjdrC0ZI71Xyoh7axQ"
+        />
 
         <meta property="og:url" content="https://www.hbomaxparty.net/" />
         <meta property="og:type" content="website" />
