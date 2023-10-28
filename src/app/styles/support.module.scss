@@ -24,7 +24,7 @@
 
         .form{
             // border: 1px solid gray;
-            width: 80%;
+            width: 100%;
             // background: rgba( 255, 255, 255, 0.25 );
             // box-shadow: 0 .8rem 3.2rem 0 rgba( 31, 38, 135, 0.37 );
             // backdrop-filter: blur( 2.4rem );
@@ -53,13 +53,15 @@
                 
                 input,textarea{
                     width: 100%;
-                    padding: 1rem;
-                    border: 1px solid gray;
+                    padding: 2rem;
+                    border: 1px solid rgba(255, 255, 255, 0.308);
                     // background: rgba( 255, 255, 255, 0.25 );
                     // box-shadow: 0 .8rem 3.2rem 0 rgba( 31, 38, 135, 0.37 );
                     // backdrop-filter: blur( 2.4rem );
                     // -webkit-backdrop-filter: blur( 2.4rem );
                     border-radius: 1rem;
+                    background: none;
+                    font-size: 2rem;
 
                     &::placeholder{
                         color: rgba(255, 255, 255, 0.534);
@@ -69,7 +71,7 @@
                 button{
                     padding: 1rem 2rem;
                     font-size: 1.8rem;
-                    background:#4f8bff;
+                    background:#602BC1;
                 
                     border: none;
                     border-radius: 1rem;
@@ -85,7 +87,7 @@
                     &:hover{
                         transform: scale(1.1);
                         background: white;
-                        color: #4f8bff;
+                        color: #602BC1;
                     }
                 }
             }

@@ -7,6 +7,16 @@ const Favorite = () => {
     <div className={styles.favorite}>
       <div className={styles.container}>
         <div className={styles.top}>
+          <div className={styles.right}>
+            <div className={styles["image-container"]}>
+              <Image
+                src="/favorite.svg"
+                alt="favorite"
+                fill={true}
+                className={styles.image}
+              />
+            </div>
+          </div>
           <div className={styles.left}>
             <div className={styles["left-top"]}>
               <div className={styles.headings}>
@@ -23,39 +33,9 @@ const Favorite = () => {
               </div>
             </div>
           </div>
-          <div className={styles.right}>
-            <div className={styles["image-container"]}>
-              <Image
-                src="./favorite.svg"
-                alt="favorite"
-                fill={true}
-                className={styles.image}
-              />
-            </div>
-          </div>
         </div>
 
         <div className={styles.bottom}>
-          <div className={styles["bottom-left"]}>
-            <div className={styles.bg}>
-              <div className={styles["bg-image-container"]}>
-                <Image
-                  src="./customize-bg.svg"
-                  alt="customize-bg"
-                  fill={true}
-                  className={styles["bg-image"]}
-                />
-              </div>
-            </div>
-            <div className={styles["image-container"]}>
-              <Image
-                src="./customize.svg"
-                alt="customize"
-                fill={true}
-                className={styles.image}
-              />
-            </div>
-          </div>
           <div className={styles["bottom-right"]}>
             <div className={styles.headings}>
               <h2>Explore the variety of shows on HBO Max</h2>
@@ -69,6 +49,16 @@ const Favorite = () => {
                 series, you can create your own watching room and share your
                 feelings from your comfort zone.
               </p>
+            </div>
+          </div>
+          <div className={styles["bottom-left"]}>
+            <div className={styles["image-container"]}>
+              <Image
+                src="/customize.svg"
+                alt="customize"
+                fill={true}
+                className={styles.image}
+              />
             </div>
           </div>
         </div>

@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import styles from "../styles/accordian.module.scss";
-import Button from "../components/Button";
 import Image from "next/image";
 
 const questions = [
@@ -78,7 +77,6 @@ const Accordian = () => {
             </li>
           ))}
         </ol>
-        <Button />
       </div>
     </div>
   );

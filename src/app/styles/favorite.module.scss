@@ -11,7 +11,6 @@
             justify-content: space-between;
             flex-direction: row;
             flex-wrap: wrap;
-            gap: 10rem;
 
 
             .left{
@@ -19,7 +18,7 @@
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
-                gap: 4rem;
+                // gap: 4rem;
                 flex: 1;
                 
                 .left-top, .left-bottom{
@@ -59,7 +58,7 @@
             }
             
             .right{
-                flex: .5;
+                flex: 1;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -126,7 +125,7 @@
         
                 flex-direction: column;
                 flex: 1;
-                gap: 4rem;
+                // gap: 4rem;
                 // border: 1px solid red;
     
                     .headings{

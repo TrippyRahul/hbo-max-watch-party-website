@@ -91,12 +91,13 @@ const Join = () => {
             </div>
           </div>
         </div>
-        <p>
-          To enjoy unlimited streaming, it’s just you need to have a valid
-          subscription to your streaming account, where the content is
+        <p className={styles.note}>
+          {" "}
+          NOTE : To enjoy unlimited streaming, it’s just you need to have a
+          valid subscription to your streaming account, where the content is
           available.
         </p>
-    </div>
+      </div>
     </div>
   );
 };
