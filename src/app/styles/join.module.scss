@@ -1,9 +1,36 @@
+$smaller: 480px;
+$medium: 768px;
+$large: 1024px;
+
+@mixin for-greater-than-smaller {
+  @media (min-width: $smaller) {
+    @content;
+  }
+}
+
+@mixin for-greater-than-medium {
+  @media (min-width: $medium) {
+    @content;
+  }
+}
+@mixin for-greater-than-larger {
+  @media (min-width: $large) {
+    @content;
+  }
+}
+
 .join{
+    padding: 4rem 3rem;
+
+    @include for-greater-than-medium(){
+        padding: 4rem;
+    }
+
     .container{
         width: 100%;
         display: flex;
         flex-direction: column;
-        padding: 10rem 4rem;
+        gap: 4rem;
 
         h2{
             font-size: 4.7rem;
@@ -102,46 +129,29 @@
               }
           }
 
+        .steps{
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+
+          li{
+            font-size: 2.5rem;
+            text-align: left;
+            border: 1px solid rgba(255, 255, 255, 0.13);
+            padding: 2rem;
+            border-left: 5px solid #602BC1;
+            transition: all .2s ease-in-out;
+
+            &:hover{
+              background: #602BC1;
+            }
+          }
+        }
+
         .note{
           border: 1px solid rgba(255, 255, 255, 0.13);
           padding: 2rem;
           border-left: 5px solid #602BC1;
-        }
-    }
-}
-
-@media screen and (max-width: 768px) {
-   .join{
-    .container{
-        flex-direction: column;
-        .content{
-            .timeline{
-    
-              .item{
-                .first{
-                  p{
-                    font-size: 1.5rem;
-                  }
-                }
-    
-                .second{
-                  p{
-                    font-size: 1.5rem;
-                  }
-                }
-              }
-            }
-          }
-        
-    }
-   }
-}
-
-@media screen and (max-width: 480px) {
-    .join{
-        .container{
-            flex-direction: column;
-            padding: 4rem;
         }
     }
 }

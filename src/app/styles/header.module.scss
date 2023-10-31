@@ -1,12 +1,40 @@
+$smaller: 480px;
+$medium: 768px;
+$large: 1024px;
+
+@mixin for-greater-than-smaller {
+  @media (min-width: $smaller) {
+    @content;
+  }
+}
+
+@mixin for-greater-than-medium {
+  @media (min-width: $medium) {
+    @content;
+  }
+}
+@mixin for-greater-than-larger {
+  @media (min-width: $large) {
+    @content;
+  }
+}
+
+
 .navbar{
     position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0rem 5rem;
+    // padding: 0rem 5rem;
     gap: 1rem;
     font-family: 'Poppins', sans-serif;
+
+    padding: 0rem 3rem 0rem 1rem;
+
+    @include for-greater-than-medium(){
+        padding: 4rem 4rem 0rem 3rem;
+    }
 
     .links{
         display: flex;

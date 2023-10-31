@@ -1,22 +1,55 @@
+$smaller: 480px;
+$medium: 768px;
+$large: 1024px;
+
+@mixin for-greater-than-smaller {
+  @media (min-width: $smaller) {
+    @content;
+  }
+}
+
+@mixin for-greater-than-medium {
+  @media (min-width: $medium) {
+    @content;
+  }
+}
+@mixin for-greater-than-larger {
+  @media (min-width: $large) {
+    @content;
+  }
+}
+
 .about{
+
+    padding: 4rem 3rem;
+
+    @include for-greater-than-medium(){
+        padding: 4rem;
+    }
+
     .container{
-        padding: 5rem;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        gap: 2rem;
 
         .top{
             display: flex;
-            gap: 5rem;
+            flex-wrap: wrap;
             align-items: center;
+            justify-content: space-between;
+            
+            gap: 4rem;
 
             .left{
-                flex: 1;
+                width: 100%;
                 display: flex;
                 flex-direction: column;
                 gap: 4rem;
                 flex-wrap: wrap;
+
+                @include for-greater-than-medium(){
+                    width: 50%;
+                }
 
                 .headings{
                     h2{
@@ -49,11 +82,15 @@
             }
 
             .right{
-                flex: 1;
+                width: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
-                position: relative;                    
+                position: relative;  
+                
+            @include for-greater-than-medium(){
+                width: 40%;
+              }                  
                 
                 .image-container {
                     width: 100%;
@@ -76,33 +113,3 @@
     }
 }
 
-
-@media screen and (max-width: 768px) {
-    .about{
-     .container{
-         .top{
-            flex-direction: column;
-
-            .right{
-                justify-content: center;
-            }
-         }
-     }
-    }
- }
- 
- @media screen and (max-width: 480px) {
-    .about{
-        .container{
-            padding: 4rem;
-            gap: 4rem;
-            .top{
-               flex-direction: column;
-   
-               .right{
-                   justify-content: center;
-               }
-            }
-        }
-       }
- }

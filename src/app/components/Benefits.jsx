@@ -7,7 +7,7 @@ const Benefits = () => {
   return (
     <div className={styles.benefits} id="features">
       <div className={styles.container}>
-        <div className={styles.right}>
+        <div className={styles.left}>
           <div className={styles.top}>
             <div className={styles.headings}>
               <h2>Enjoy yourself in endless streaming</h2>
@@ -23,7 +23,7 @@ const Benefits = () => {
             </div>
           </div>
         </div>
-        <div className={styles.left}>
+        <div className={styles.right}>
           <div className={styles["image-container"]}>
             <Image
               src="/benefits.svg"

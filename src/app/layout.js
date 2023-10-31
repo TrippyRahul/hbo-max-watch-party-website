@@ -50,6 +50,21 @@ export default function RootLayout({ children }) {
           name="twitter:image"
           content="https://www.hbomaxparty.net/logo.svg"
         />
+
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-PQ8ZM689D9"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-PQ8ZM689D9');
+              `,
+          }}
+        />
       </head>
       <body>
         <Schema />

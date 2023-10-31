@@ -1,6 +1,31 @@
+$smaller: 480px;
+$medium: 768px;
+$large: 1024px;
+
+@mixin for-greater-than-smaller {
+  @media (min-width: $smaller) {
+    @content;
+  }
+}
+
+@mixin for-greater-than-medium {
+  @media (min-width: $medium) {
+    @content;
+  }
+}
+@mixin for-greater-than-larger {
+  @media (min-width: $large) {
+    @content;
+  }
+}
+
 .work{
-    .container{
+    padding: 4rem 3rem;
+
+    @include for-greater-than-medium(){
         padding: 4rem;
+    }
+    .container{
         display: flex;
         flex-direction: column;
         gap: 2rem;
@@ -44,13 +69,3 @@
 }
 
 
-@media screen and (max-width: 768px) {
-  .work{
-    .container{
-      .content{
-      
-      }
-    }
-
-  }
-}

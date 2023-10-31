@@ -1,46 +1,54 @@
+$smaller: 480px;
+$medium: 768px;
+$large: 1024px;
+
+@mixin for-greater-than-smaller {
+  @media (min-width: $smaller) {
+    @content;
+  }
+}
+
+@mixin for-greater-than-medium {
+  @media (min-width: $medium) {
+    @content;
+  }
+}
+@mixin for-greater-than-larger {
+  @media (min-width: $large) {
+    @content;
+  }
+}
+
+
 .benefits{
+    padding: 4rem 3rem;
+
+    @include for-greater-than-medium(){
+        padding: 4rem;
+    }
 
     .container{
-        width: 100%;
-        height: 100%;
+        color: white;
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        padding: 5rem;
+        justify-content: space-between;
+        
+        gap: 4rem;
         
 
         .left{
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-            position: relative;
-
-            .image-container {
-                width: 90%;
-              
-                > div {
-                  position: unset !important;
-                }
-              
-                .image {
-                  object-fit: contain;
-                  width: 100% !important;
-                  position: relative !important;
-                  height: unset !important;
-                }
-              }
-        }
-
-        .right{
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
             gap: 4rem;
-            flex: 1;
+
+            
+            @include for-greater-than-medium(){
+                width: 50%;
+            }
 
             .top{
                 display: flex;
@@ -80,41 +88,36 @@
             }
         }
 
+
+        .right{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            position: relative;
+
+
+            @include for-greater-than-medium(){
+                width: 40%;
+              }
+
+            .image-container {
+                width: 100%;
+              
+                > div {
+                  position: unset !important;
+                }
+              
+                .image {
+                  object-fit: contain;
+                  width: 100% !important;
+                  position: relative !important;
+                  height: unset !important;
+                }
+              }
+        }
+
+       
     }
 }
-
-@media screen and (max-width: 115px) {
-   .benefits{
-    .container{
-        justify-content: center;
-        flex-direction: column;
-        .left{
-           width: 100%;
-        }
-    }
-   }
-  }
-  
-@media screen and (max-width: 768px) {
-   .benefits{
-    .container{
-        justify-content: center;
-        flex-direction: column;
-        .left{
-           
-        }
-    }
-   }
-  }
-  
-  
-
-  @media screen and (max-width: 480px) {
-    .benefits{
-        .container{
-            padding: 4rem;
-
-        }
-       }
-  }
-
